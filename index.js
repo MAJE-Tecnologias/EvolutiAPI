@@ -4,8 +4,9 @@ import usuarioRoutes from './routes/usuario.js';
 import clinicaRoutes from './routes/clinica.js';
 import pacienteRoutes from './routes/paciente.js';
 import enderecoRoutes from './routes/endereco.js';
-import dotenv from dotenv;
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 const app = express();
 const PORT = 3000;
