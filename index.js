@@ -4,10 +4,12 @@ import usuarioRoutes from './routes/usuario.js';
 import clinicaRoutes from './routes/clinica.js';
 import pacienteRoutes from './routes/paciente.js';
 import enderecoRoutes from './routes/endereco.js';
+import dotenv from dotenv;
+
 
 const app = express();
 const PORT = 3000;
-const MONGO_URI = 'mongodb+srv://projetoevoluti:4qljdqqZmwQKFgRp@evoluti.iw8yc2g.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGO_URI;
 
 const connectDB = async () => {
   try {
