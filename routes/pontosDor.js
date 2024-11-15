@@ -3,9 +3,9 @@ import {criarPontosDor, editarPontosDor, excluirPontosDor, buscarPontosDor} from
 
 const router = express.Router();
 
-router.post('/enderecos', criarPontosDor);
-router.get('/enderecos/id=:id?', buscarPontosDor);
-router.delete('/enderecos/id=:id', excluirPontosDor);
-router.put('/enderecos/id=:id', editarPontosDor);
+router.post('/pontosDor', criarPontosDor);
+router.get('/pontosDor/id=:id?', buscarPontosDor);
+router.delete('/pontosDor/id=:id', excluirPontosDor);
+router.put('/pontosDor/id=:id', editarPontosDor);
 
 export default router;

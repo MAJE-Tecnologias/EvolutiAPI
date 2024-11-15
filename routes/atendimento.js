@@ -3,9 +3,9 @@ import { buscarAtendimento, criarAtendimento, excluirAtendimento, editarAtendime
 
 const router = express.Router();
 
-router.post('/clinicas', criarAtendimento);
-router.get('/clinicas', buscarAtendimento);
-router.delete('/clinicas/id=:id', excluirAtendimento);
-router.put('/clinicas/id=:id', editarAtendimento);
+router.post('/atendimentos', criarAtendimento);
+router.get('/atendimentos', buscarAtendimento);
+router.delete('/atendimentos/id=:id', excluirAtendimento);
+router.put('/atendimentos/id=:id', editarAtendimento);
 
 export default router;
