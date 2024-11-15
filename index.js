@@ -4,6 +4,8 @@ import usuarioRoutes from './routes/usuario.js';
 import clinicaRoutes from './routes/clinica.js';
 import pacienteRoutes from './routes/paciente.js';
 import enderecoRoutes from './routes/endereco.js';
+import atendimentoRoutes from './routes/atendimento.js';
+import pontosDorRoutes from './routes/pontosDor.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -32,6 +34,8 @@ app.use('/api', usuarioRoutes);
 app.use('/api', clinicaRoutes);
 app.use('/api', pacienteRoutes);
 app.use('/api', enderecoRoutes);
+app.use('/api', pontosDorRoutes);
+app.use('/api', atendimentoRoutes);
 
 // Iniciar o servidor
 app.listen(PORT, () => {
