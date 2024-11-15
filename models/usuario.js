@@ -5,12 +5,15 @@ const usuarioSchema = new mongoose.Schema({
   nome: String,
   nascimento: Date,
   rg: String,
-  genero: String,
+  genero: Number,
   email: {type: String, unique: true},
   senha: String,
   user: String,
   telefone: String,
   tipoUsuario: Number,
+  verificador: Number,
+  stats: Boolean,
+  Fk_Clinica: String,
   clinicaId: { type: mongoose.Schema.Types.ObjectId, ref: 'Clinica' } 
 });
 
