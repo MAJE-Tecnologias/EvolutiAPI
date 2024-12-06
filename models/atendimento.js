@@ -8,6 +8,6 @@ const atendimentoSchema = new mongoose.Schema({
   pacienteId: { type: mongoose.Schema.Types.ObjectId, ref: 'Paciente' } 
 });
 
-const Paciente = mongoose.model('Paciente', atendimentoSchema);
+const Atendimento = mongoose.models.Atendimento || mongoose.model('Paciente', atendimentoSchema);
 
-export default Paciente;
+export default Atendimento;

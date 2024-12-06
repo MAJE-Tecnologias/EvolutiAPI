@@ -12,6 +12,6 @@ const pacienteSchema = new mongoose.Schema({
   enderecoId: { type: mongoose.Schema.Types.ObjectId, ref: 'Endereco' }
 });
 
-const Paciente = mongoose.model('Paciente', pacienteSchema);
+const Paciente = mongoose.models.Paciente || mongoose.model('Paciente', pacienteSchema);
 
 export default Paciente;

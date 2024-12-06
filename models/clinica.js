@@ -11,6 +11,6 @@ const clinicaSchema = new mongoose.Schema({
   nivel: [Number]
 });
 
-const Clinica = mongoose.model('Clinica', clinicaSchema);
+const Clinica = mongoose.models.Clinica || mongoose.model('Clinica', clinicaSchema);
 
 export default Clinica;

@@ -11,6 +11,6 @@ const enderecoSchema = mongoose.Schema({
   uf: String
 });
 
-const Endereco = mongoose.model('Endereco', enderecoSchema);
+const Endereco = mongoose.models.Endereco || mongoose.model('Endereco', enderecoSchema);
 
 export default Endereco;
